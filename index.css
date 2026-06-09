@@ -1,6 +1,7 @@
 .body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 .navbar {
   background-color: rgb(0, 0, 51);
@@ -26,8 +27,38 @@
   color: white;
 }
 
-@media (max-width:768px) {
-    .navbar{
-        flex-direction: column;
-    }
+.hero {
+  background-image: url("./assets//hero-cruise.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 98vw;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h1,
+.hero p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.hero button {
+  color: white;
+  background-color: #ff7700;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
 }
