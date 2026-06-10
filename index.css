@@ -1,10 +1,10 @@
-.body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+:root{
+  --primary:rgb(0, 0, 51);
+  --accent:orange;
+  --text-color:white;
 }
 .navbar {
-  background-color: rgb(0, 0, 51);
+  background-color: var(--primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,7 +24,7 @@
 
 .menu li a {
   text-decoration: none;
-  color: white;
+  color: var(--text-color);
 }
 
 .hero {
@@ -39,7 +39,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color:var(--text-color);
   text-align: center;
 }
 
@@ -50,15 +50,15 @@
 }
 
 .hero button {
-  color: white;
-  background-color: #ff7700;
+  color: var(--text-color);
+  background-color:var(--accent);
   padding: 5px 10px;
   border-radius: 5px;
   border: none;
 }
 
 .heading {
-  border-left: 5px solid orange;
+  border-left: 5px solid var(--accent);
   padding: 0 10px;
   margin: 0 20px;
 }
@@ -95,7 +95,7 @@
   position: absolute;
   bottom: 20px;
   left: 10px;
-  color: white;
+  color: var(--text-color);
 }
 .banner-text h3,
 .banner-text p {
@@ -120,7 +120,7 @@
 .card-text {
   position: absolute;
   bottom: 10px;
-  color: white;
+  color: var(--text-color);
   font-size: 15px;
   left: 5px;
 }
@@ -134,7 +134,7 @@
 }
 .contact h3 {
   display: inline-block;
-  border-bottom: 4px solid orange;
+  border-bottom: 4px solid var(--accent);
 }
 .contacts {
   display: grid;
@@ -154,23 +154,23 @@
 .footer {
   display: flex;
   justify-content: space-around;
-  background-color: rgb(0, 0, 51);
+  background-color: var(--primary);
   margin-top: 20px;
-  color: white;
+  color:var(--text-color);
 }
 .footer h3 {
-  color: orange;
+  color: var(--accent);
 }
 
 .footer_rights {
   text-align: center;
   background-color: rgb(0, 0, 51);
 }
-.footer_rights p{
-    margin: 0;
-    padding-bottom: 20px;
-    color: white;
-    border-top: 1px solid rgb(2, 2, 95);
+.footer_rights p {
+  margin: 0;
+  padding-bottom: 20px;
+  color: var(--text-color);
+  border-top: 1px solid rgb(2, 2, 95);
 }
 
 @media (max-width: 768px) {
@@ -190,7 +190,6 @@
     flex-direction: column;
   }
   .card-head {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
@@ -206,7 +205,6 @@
 
 @media (max-width: 480px) {
   .card-head {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
   }
